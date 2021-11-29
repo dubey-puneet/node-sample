@@ -1,0 +1,48 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title></title>
+    </head>
+
+    <body style="background:#ebeef0;">
+
+        <div style="background: #00b7ce; float: left; padding: 5% 8%; width: 84%; 
+                font-family:sans-serif;">
+                <div style="width:100%; margin:0 auto;">
+                <div style="float:left;width:100%; text-align:center; background:#ffffff; padding-top:60px; box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);">
+                <img src="{{moredata.logo}}" style="max-width:180px; "/>
+
+                <div style="float:left; width:100%; margin-top:40px; margin-bottom:40px; text-align:center;">
+
+
+                <div style="font-family: serif; color: #4f391d; font-size: 20px; line-height:30px; text-align:left;  font-weight: 300; margin: 0 0 40px; padding: 0 20%; ">
+                <!-- <h2 style="color: #225dd2; font-family: serif; font-size: 50px; font-style: italic; font-weight: 300; margin: 0 0 46px;">Notification</h2> -->
+                {% autoescape false %}
+                {{message}}
+                {% endautoescape %}
+                </pre>
+                </div>
+                </div>
+
+                <div style="border-top: 1px solid #ccc; float: left; margin-bottom: 40px;  margin-top: 0px; padding-top: 40px;
+                    text-align: center; width: 100%; color:#999; line-height:25px;">
+                    
+                <div style="font-family: serif; color: #4f391d; font-size: 13px; line-height:18px; text-align:center;  font-weight: 300; margin: 0 0 10px; padding: 0 20%; ">
+                        This is a system-generated message from Juniorlogs SMS. Please do not reply to this email. For any queries, please contact {{moredata.fromEmail}}.
+                </div>
+                    
+                    
+                <a href="#" style="color: #000000; text-decoration: none;">www.juniorlogs.com</a>
+
+                </div>
+
+                </div>
+                </div>
+
+                </div>
+            <!-- @end footer -->
+
+        </div>
+    </body>
+</html>
